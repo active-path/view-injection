@@ -1,3 +1,4 @@
+require 'active_path'
 require 'active_path/view_injection/configuration/partials'
 require 'active_path/view_injection/subscriber'
 module ActivePath
