@@ -1,0 +1,1 @@
+require 'active_path/view_injection/engine'
