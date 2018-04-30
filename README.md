@@ -43,7 +43,7 @@ Your partial will have the same local parameters access as the prepended partial
 
 ```ruby
 
-config.partials.append('pages/content').with('example/test')
+ActivePath.append('pages/content').with('example/test')
 
 ```
 
@@ -64,7 +64,7 @@ You can pass in a hash which must match the local variables.
 
 ```ruby
 
-config.partials.append('pages/content').with('example/test').when(page_id: 9)
+ActivePath.append('pages/content').with('example/test').when(page_id: 9)
 
 ```
 
@@ -72,7 +72,7 @@ Or pass in a block for more flexibility with your conditions:
 
 ```ruby
 
-config.partials.append('pages/content').with('example/test').when do |locals|
+ActivePath.append('pages/content').with('example/test').when do |locals|
   locals[:page_id] == 9
 end
 
