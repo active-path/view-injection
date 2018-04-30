@@ -27,13 +27,7 @@ end
 
 ```ruby
 
-ActivePath.configure do |config|
-
-  ...
-
-  config.partials.prepend('pages/content').with('example/test')
-
-end
+ActivePath.prepend('pages/content').with('example/test')
 
 ```
 
